@@ -32,6 +32,8 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
+# typescript   ecomerce-nextjs-approuter
+
 *.tsbuildinfo
 next-env.d.ts
+

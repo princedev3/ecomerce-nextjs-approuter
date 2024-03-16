@@ -73,6 +73,7 @@ if("secure_url" in info && "public_id" in info){
 </svg>
 
                     </div>
+                    <p className='text-sm italic text-red-500'>add image only from unSplash</p>
                 </CldUploadButton>
             
                      </div>
