@@ -45,7 +45,7 @@ const session = useSession()
    
   return (
     <div>
-         <div className='flex justify-between py-4 px-8 flex-wrap  gap-3'>
+         <div className='flex justify-between py-4 px-8 flex-wrap  gap-3 w-full '>
             {category.map(item=>
             <div className='py-2 px-4 bg-black/5 rounded-full hover:scale-105 transition-all duration-300 hover:bg-blue-600 hover:text-white  mb-3' onClick={()=>setCat(item)} key={item}>
               {item}

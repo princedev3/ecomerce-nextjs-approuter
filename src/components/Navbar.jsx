@@ -8,7 +8,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
     const {data,status} = useSession()
-    
+  
    
     const { totalItem} = useCartStore()
    
@@ -38,7 +38,7 @@ const Navbar = () => {
     
 <div className=' flex-1 relative '>
 <div className='lg:flex items-center justify-center hidden'>
-    <input onChange={e=>setQuery(e.target.value)} type="text" className='w-full placeholder: p-2 border border-gray-200  rounded-full text-gray-400 outline-none '  placeholder='Search for your delicious meal'/>
+    <input  onChange={e=>setQuery(e.target.value)} type="text" className='w-full placeholder: p-2 border border-gray-200  rounded-full text-gray-400 outline-none '  placeholder='Search for your delicious meal'/>
     <button className='absolute  right-4 text-gray-400'>
     <Search />
     </button>

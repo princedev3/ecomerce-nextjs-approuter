@@ -41,9 +41,11 @@ const router = useRouter()
   },[paymentIntent])
  
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      thank you for choosing us.
+    <Suspense fallback={<div>Loading...</div>} >
+     <div className="mb-6 text-xl font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+     thank you for choosing us.
       paymenet successful please do not close page
+     </div>
       </Suspense>
   )
 }

@@ -32,8 +32,8 @@ const SingleProduct = ({handleWish,item,idx,}) => {
 
   
   return (
-    <div className=' '>
-          <div key={idx} className='w-[280px] h-[290px] bg-fuchsia-50/5 shadow-md rounded-3xl   '>
+    <div className=' relative'>
+          <div key={idx} className='w-[280px]  h-[290px] bg-fuchsia-50/5 shadow-md rounded-3xl    '>
                 <div className='relative w-full h-[60%] '>
                     <Image alt='' src={item.image} fill className='object-contain hover:rotate-45 duration-300 transition-all rounded-lg'/>
                  {
@@ -55,10 +55,13 @@ const SingleProduct = ({handleWish,item,idx,}) => {
                 { 
             
 
-                <div ref={popupRef} className={`${isVisible?"absolute rounded-2xl mx-[100px] bg-black/50  w-[80%] h-[100%] left-0 top-0  z-40":"absolute w-full h-[50%] left-0 top-0  z-50 hidden"}`} >
+            
+                 <div ref={popupRef} className={`${isVisible?"absolute rounded-2xl mx-auto bg-black/50  w-full h-full  top-[20%]  z-40":"absolute w-full   z-50 hidden"}`} >
                 <ProductModal id={item.id}  />
               
-            </div>}
+            </div> 
+             
+            }
             </div>
     </div>
   )

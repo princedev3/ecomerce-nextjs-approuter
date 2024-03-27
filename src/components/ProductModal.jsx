@@ -43,13 +43,13 @@ toast.success("product added to cart successfully")
     <div className='w-full h-full relative flex items-center justify-center '>
          <div  className="w-[90%] h-[90%]  bg-white/90 absolute  rounded-2xl p-6">
        
-                <div className='relative w-full h-[60%] '>
+                <div className='relative w-full h-[40%] md:h-[50%] '>
                     <Image alt='' src={item.image} fill className='object-contain hover:rotate-45 duration-300 transition-all'/>
                    
                    
                 </div>
-                <div className="p-3 flex flex-col items-center">
-               <div className=" grid grid-cols-2 mb-2  gap-2">
+                <div className="p-2 flex flex-col items-center">
+               <div className=" grid grid-cols-2 mb-1  gap-2">
                <p className='hover:underline'>{item.name} </p>
                 <p className='hover:underline'>{item.desc} </p>
                 <p className='hover:underline'>{item.ingridient} </p>

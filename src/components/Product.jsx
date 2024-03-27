@@ -32,7 +32,7 @@ const Product = ({products}) => {
    
   return (
     <div>
-        <div className=" flex gap-8 flex-wrap justify-center px-2 items-center mx-auto">
+        <div className=" flex gap-8 flex-wrap justify-center px-2  items-center mx-auto">
             {products && products.map((item,idx)=>
             (
           <SingleProduct  item={item} idx={idx} handleWish={handleWish}  />

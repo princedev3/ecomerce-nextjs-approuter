@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className } md:w-[720px]  lg:w-[1020px] xl:w-[1200px] mx-auto`}>
+      <body className={`${inter.className } md:w-[720px]  lg:w-[1024px] xl:w-[1200px]  overflow-x-hidden mx-auto`}>
         <NextAuthProvider>
         <CreateContext>
       <Navbar/>

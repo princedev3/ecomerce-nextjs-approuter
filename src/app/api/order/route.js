@@ -37,9 +37,9 @@ export const GET = async(req,{params})=>{
             
         }
     }else{
-        const order = await prisma.order.findUnique({
+        const order = await prisma.order.findMany({
             where:{
-                email:session.user.email
+                email:session?.user?.userEmail
             }
         })
         return new NextResponse(JSON.stringify(order),{status:200})
